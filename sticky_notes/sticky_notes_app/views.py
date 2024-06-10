@@ -172,7 +172,7 @@ def post_new(request):
             if request.user.is_authenticated:
                 post.author = request.user
                 # Save the Post object to the database.
-                post.save()
+            post.save()
             # Redirect to the detail view of the newly created post.
             return redirect('post_detail', id=post.id)
     else:

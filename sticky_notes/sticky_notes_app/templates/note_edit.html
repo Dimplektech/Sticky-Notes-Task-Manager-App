@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<h3>{{heading}} to the Post: {{post.title}}</h3>
+<h3>{{heading}} : {{post.title}}</h3>
 <form method="post">
   {%csrf_token %} {{form.as_p}}
   <button type="submit" class="button">Save</button>

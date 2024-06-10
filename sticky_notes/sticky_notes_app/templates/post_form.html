@@ -10,7 +10,9 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="button">Save</button>
+        {% if form.instance.id %}
         <a href="{% url 'post_detail' id=form.instance.id %}"> Back to Post List</a>
+        {% endif %}
     </form>
     
 {% endblock %}    
