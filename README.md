@@ -67,6 +67,8 @@ Here are some screenshots of the application in action:
 ![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/c2bc76b7-2c06-459e-9173-8ad43c70cbaf)
 
 ### Add new Post
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/3f02abca-8f99-4bd9-8ee6-7ac317b242fa)
+
 
 
 
