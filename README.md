@@ -22,11 +22,12 @@ Sticky Note Task Manager Application is Web application designed using django, P
 - **User Authentication**: Allows users to create and manage posts and notes if authenticated.
 - **Automatic Timestamps**: Automatically records the creation and last update time for both posts and notes.
 
-<h2> Installation </h2>
+## Installation
 1. **Clone the repository:**
     ```sh
     git clone https://github.com/yourusername/sticky-notes-app.git
     cd sticky-notes-app
+    ```
 
 2. **Create and activate a virtual environment:**
     ```sh
@@ -39,4 +40,60 @@ Sticky Note Task Manager Application is Web application designed using django, P
     pip install -r requirements.txt
     ```
 
- 
+4. **Apply migrations:**
+    ```sh
+    python manage.py migrate
+    ```
+
+5. **Create a superuser (optional, for admin access):**
+    ```sh
+    python manage.py createsuperuser
+    ```
+
+6. **Run the development server:**
+    ```sh
+    python manage.py runserver
+    ```
+
+## Usage
+1. **Access the application:**
+    Open your web browser and go to `http://127.0.0.1:8000/`.
+
+## Models
+### Post
+- `title`: The title of the post.
+- `content`: The content of the post.
+- `created_at`: Timestamp when the post was created.
+- `updated_at`: Timestamp when the post was last updated.
+
+### Notes
+- `title`: The title of the note.
+- `content`: The content of the note.
+- `post`: Foreign key relationship to the `Post` model.
+- `created_at`: Timestamp when the note was created.
+- `updated_at`: Timestamp when the note was last updated.
+
+## Views
+### Post Views
+- `post_list`: Displays a list of all posts.
+- `post_details`: Displays details of a specific post along with its associated notes.
+- `post_new`: Form to create a new post.
+- `post_edit`: Form to edit an existing post.
+- `post_delete`: Deletes a specified post.
+
+### Notes Views
+- `note_list`: Displays a list of all notes associated with a specific post.
+- `note_detail`: Displays details of a specific note.
+- `note_new`: Form to create a new note.
+- `note_edit`: Form to edit an existing note.
+- `note_delete`: Deletes a specified note.
+
+## Running Tests
+To run the tests for this project, use the following command:
+```sh
+python manage.py test
+```
+
+<h2>Credits</h2>
+<h3> Author: Dimpal Kaware </h3>
+<h3>Repository: https://github.com/Dimplektech</h3>
