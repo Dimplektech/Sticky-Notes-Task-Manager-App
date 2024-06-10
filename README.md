@@ -69,10 +69,20 @@ Here are some screenshots of the application in action:
 ### Add new Post
 ![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/3f02abca-8f99-4bd9-8ee6-7ac317b242fa)
 
+### Edit Post
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/24da1e56-22b4-48e5-aafc-52c7b1c06d2b)
 
 
+### Add new Note to Perticulat Post
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/860276df-ba95-41c9-b769-451136f07f14)
 
 
+### Edit Note
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/e84d1888-74fb-4cbe-8075-133a3ae89151)
+
+
+### Note Details
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/c8ecec7a-eb31-495a-a14e-4ef0a0ebb4b6)
    
 
 ## Models
