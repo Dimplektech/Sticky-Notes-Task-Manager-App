@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Bulletin Board {% endblock %}
+
+{% block content %}
+<h1>Bulletin Board</h1>
+<h2>{{ heading }}</h2>
+    
+    <form method="post" action="{% if form.instance.id %}{% url 'post_edit' id=form.instance.id %}{% else %}{% url 'post_new' %}{% endif %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="button">Save</button>
+        <a href="{% url 'post_detail' id=form.instance.id %}"> Back to Post List</a>
+    </form>
+    
+{% endblock %}    
+
+ 

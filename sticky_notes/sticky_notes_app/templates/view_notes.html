@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Sticky Notes {% endblock%}
+{% block content %}
+    <h2>{{ page_title}}</h2>
+       
+    <ul>
+        {%for note in notes %}
+            <li>
+                <a href="{% url 'note_detail' id=note.id %}">{{note.title}}</a><br>
+               <!-- <a href="{% url 'note_edit' id=note.id %}">Edit</a>-->
+                <!--<a href="{% url 'note_delete' id=note.id %}">Delete</a>-->
+            </li>    
+        {% endfor %}        
+    </ul>
+    <br><br> 
+
+    <a href="{%url 'note_new' post.id %}""><b>Add New Note</b></a><br>
+    <a href="{%url 'post_list' %}"><b>Back to Post List<b></a>
+{% endblock %}    
