@@ -58,6 +58,20 @@ Sticky Note Task Manager Application is Web application designed using django, P
 ## Usage
 1. **Access the application:**
     Open your web browser and go to `http://127.0.0.1:8000/`.
+## Screenshots
+Here are some screenshots of the application in action:
+### Home Page With List of Posts
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/cfd3dbaf-a245-4bc2-90ca-109965faed88)
+
+### Post Details
+![image](https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App/assets/163059141/c2bc76b7-2c06-459e-9173-8ad43c70cbaf)
+
+### Add new Post
+
+
+
+
+   
 
 ## Models
 ### Post
