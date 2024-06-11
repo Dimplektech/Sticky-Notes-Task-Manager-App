@@ -42,12 +42,7 @@ Sticky Note Task Manager Application is Web application designed using django, P
     python manage.py migrate
     ```
 
-5. **Create a superuser (optional, for admin access):**
-    ```sh
-    python manage.py createsuperuser
-    ```
-
-6. **Run the development server:**
+5. **Run the development server:**
     ```sh
     python manage.py runserver
     ```
