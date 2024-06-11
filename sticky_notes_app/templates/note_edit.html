@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<h3>{{heading}} : {{post.title}}</h3>
+<form method="post">
+  {%csrf_token %} {{form.as_p}}
+  <button type="submit" class="button">Save</button>
+  <br />
+  <a href="{%url 'note_list' post_id=post_id %}" class="button button-cancel"
+    >Cancel</a
+  >
+</form>
+
+{% endblock %}

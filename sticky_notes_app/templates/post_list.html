@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{% block title %} Bulletin Board  {% endblock%}
+
+{% block content %}
+<h1> Bulletin Board </h1>
+  <h2>{{ page_title}}</h2>
+    <ul>
+        {% for post in posts %}
+        <li>
+            <a href="{% url 'post_detail' id=post.id %}">{{post.title}}</a>
+            
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <br>
+    <a href="{%url 'post_new' %}""><b>Add New Post</b></a>
+{% endblock %}    

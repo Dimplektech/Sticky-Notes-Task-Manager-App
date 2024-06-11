@@ -1,0 +1,110 @@
+/* Reset default margin and padding */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 25%, 98%); /* Light background color */
+    color: #333; /* Main text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto; /* Add margin for spacing from the top */
+    padding: 20px; /* Add some padding for better spacing */
+    background-color: #fff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+    color: #007bff; /* Primary color for headings */
+    margin-bottom: 20px; /* Add spacing below headings */
+    font-size: 2em; /* Larger font size for headings */
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Improved button styles */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form p {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    height: 150px; /* Initial height */
+}
+
+/* Link styling */
+.link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+

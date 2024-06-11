@@ -1,0 +1,17 @@
+{% extends 'base.html'%} {% block content %}
+<h2><b>Post: {{ post.title }}</b></h2>
+<p><b>Content:</b> {{ post.content }}</p>
+<p>Created at : {{ post.created_at }}</p>
+
+<ul>
+  {%for note in notes %}
+  <li><a href="{% url 'note_detail' note.id %}">{{note.title}}</a></li>
+  {% endfor %}
+</ul>
+<br>
+<br>
+<a href="{% url 'note_new' post.id %}"><b>Add Note to the Post</b></a><br />
+<a href="{% url 'post_list' %}"><b>Back to Post List</b></a><br />
+<a href="{% url 'post_edit' id=post.id %}"><b>Edit Post</b></a><br />
+<a href="{% url 'post_delete' id=post.id %}"><b>Delete Post<b></a><br />
+{% endblock %}
