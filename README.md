@@ -22,7 +22,7 @@ Sticky Note Task Manager Application is Web application designed using django, P
 ## Installation
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/sticky-notes-app.git
+    https://github.com/Dimplektech/Sticky-Notes-Task-Manager-App.git
     cd sticky-notes-app
     ```
 
