@@ -17,7 +17,7 @@ Sticky Note Task Manager Application is Web application designed using django, P
 - **Posts Management**: Create, view, edit, and delete posts.
 - **Notes Management**: Create, view, edit, and delete notes associated with specific posts.
 - **User Authentication**: Allows users to create and manage posts and notes if authenticated.
-- **Automatic Timestamps**: Automatically records the creation and last update time for both posts and notes.
+
 
 ## Installation
 1. **Clone the repository:**
